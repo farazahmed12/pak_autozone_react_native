@@ -3,11 +3,11 @@ import React, {useEffect} from 'react';
 import LinearGradient from 'react-native-linear-gradient';
 
 const Splash = ({navigation}) => {
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     navigation.navigate('Started');
-  //   }, 3000);
-  // }, []);
+  useEffect(() => {
+    setTimeout(() => {
+      navigation.navigate('Started');
+    }, 3000);
+  }, []);
 
   return (
     <LinearGradient
