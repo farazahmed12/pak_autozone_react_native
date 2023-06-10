@@ -5,6 +5,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 // screens
 import Splash from '../screens/Splash';
 import Started from '../screens/Started';
+import BottomTabNavigation from './BottomTabNavigation';
 
 const Stack = createNativeStackNavigator();
 
@@ -20,6 +21,12 @@ const HomeNavigation = () => {
       <Stack.Screen
         name="Started"
         component={Started}
+        options={{headerShown: false}}
+      />
+
+      <Stack.Screen
+        name="HomeScreen"
+        component={BottomTabNavigation}
         options={{headerShown: false}}
       />
     </Stack.Navigator>

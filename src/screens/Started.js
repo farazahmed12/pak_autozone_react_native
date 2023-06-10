@@ -10,8 +10,10 @@ import {
 import React from 'react';
 import Swiper from 'react-native-swiper';
 import LinearGradient from 'react-native-linear-gradient';
+import {useNavigation} from '@react-navigation/native';
 
 const Started = () => {
+  const navigation = useNavigation();
   const renderItemsArray = [
     {
       bannerImage: require('../assets/started_1.png'),
@@ -54,7 +56,9 @@ const Started = () => {
                   Search for your dream car from the largest car investory
                 </Text>
               </View>
-              <TouchableOpacity className="self-center text-center w-8/12 mt-14">
+              <TouchableOpacity
+                onPress={() => navigation.navigate('HomeScreen')}
+                className="self-center text-center w-8/12 mt-14">
                 <LinearGradient
                   start={{x: 0.0, y: 0.25}}
                   end={{x: 0.5, y: 1.0}}
@@ -89,7 +93,9 @@ const Started = () => {
                   Search for your dream car from the largest car investory
                 </Text>
               </View>
-              <TouchableOpacity className="self-center text-center w-8/12 mt-14">
+              <TouchableOpacity
+                onPress={() => navigation.navigate('HomeScreen')}
+                className="self-center text-center w-8/12 mt-14">
                 <LinearGradient
                   start={{x: 0.0, y: 0.25}}
                   end={{x: 0.5, y: 1.0}}
@@ -124,7 +130,9 @@ const Started = () => {
                   Search for your dream car from the largest car investory
                 </Text>
               </View>
-              <TouchableOpacity className="self-center text-center w-8/12 mt-14">
+              <TouchableOpacity
+                onPress={() => navigation.navigate('HomeScreen')}
+                className="self-center text-center w-8/12 mt-14">
                 <LinearGradient
                   start={{x: 0.0, y: 0.25}}
                   end={{x: 0.5, y: 1.0}}
