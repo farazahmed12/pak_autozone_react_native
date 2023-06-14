@@ -1,12 +1,12 @@
 import {View, Text} from 'react-native';
 import React from 'react';
 
-const Ads = () => {
+const Pending = () => {
   return (
     <View>
-      <Text>Ads</Text>
+      <Text>Pending</Text>
     </View>
   );
 };
 
-export default Ads;
+export default Pending;

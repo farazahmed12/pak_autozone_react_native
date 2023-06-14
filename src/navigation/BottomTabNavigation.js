@@ -4,11 +4,12 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
 // screens
 import HomeScreen from '../screens/HomeScreen';
-import Ads from '../screens/Ads';
+import Ads from '../screens/MyAds/Ads';
 import Setnow from '../screens/Setnow';
 import Chat from '../screens/Chat';
 import Menu from '../screens/Menu';
 import TabBar from '../screens/TabBar';
+import TopTabnavigation from './TopTabnavigation';
 
 const Tab = createBottomTabNavigator();
 
@@ -69,7 +70,7 @@ const BottomTabNavigation = () => {
             );
           },
         }}
-        component={Ads}
+        component={TopTabnavigation}
       />
       <Tab.Screen
         name="Set Now"
