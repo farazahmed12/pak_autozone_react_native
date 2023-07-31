@@ -79,7 +79,7 @@ const BottomTabNavigation = () => {
             return (
               <View
                 activeOpacity={0.7}
-                className={` top-[-20] bg-[#0095FF] p-6 rounded-full `}>
+                className={` top-[-20] bg-[#0095FF] p-5 rounded-full `}>
                 <Image
                   className="w-5 h-5"
                   source={require('../assets/plus.png')}
